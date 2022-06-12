@@ -1,0 +1,15 @@
+{
+    "name": "eapdob/phpmvc-framework",
+    "authors": [
+        {
+            "name": "Evgenii Poperezhai",
+            "email": "eapdob@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
