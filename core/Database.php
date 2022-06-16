@@ -20,6 +20,16 @@ class Database
         $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     }
 
+    public function prepare($sql)
+    {
+        return $this->pdo->prepare($sql);
+    }
+
+    public function log($message)
+    {
+        echo '[' . date('Y-m-d H:i:s') . '] - ' . $message . PHP_EOL;
+    }
+
     public function applyMigrations()
     {
         $this->createMigrationsTable();
@@ -72,10 +82,5 @@ class Database
         $str = implode(",", array_map(fn($m) => "('$m')", $migrations));
         $statement = $this->pdo->prepare("INSERT INTO migrations (migration) VALUES $str");
         $statement->execute();
-    }
-
-    public function log($message)
-    {
-        echo '[' . date('Y-m-d H:i:s') . '] - ' . $message . PHP_EOL;
     }
 }

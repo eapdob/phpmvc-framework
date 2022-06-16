@@ -37,7 +37,7 @@ class Field
                 </div>
             </div>
         ',
-            ucfirst($this->attribute),
+            $this->model->getLabel($this->attribute) ?? ucfirst($this->attribute),
             $this->type,
             $this->attribute,
             $this->model->{$this->attribute},
