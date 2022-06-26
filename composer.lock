@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "eapdob/phpmvc",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eapdob/phpmvc.git",
-                "reference": "33e607a2b9b121d379a60059813851b3c2a16b41"
+                "reference": "ad297f5752fd5fbeeaedd1f6a0b94137c7f91754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eapdob/phpmvc/zipball/33e607a2b9b121d379a60059813851b3c2a16b41",
-                "reference": "33e607a2b9b121d379a60059813851b3c2a16b41",
+                "url": "https://api.github.com/repos/eapdob/phpmvc/zipball/ad297f5752fd5fbeeaedd1f6a0b94137c7f91754",
+                "reference": "ad297f5752fd5fbeeaedd1f6a0b94137c7f91754",
                 "shasum": ""
             },
             "type": "library",
@@ -35,9 +35,9 @@
             ],
             "support": {
                 "issues": "https://github.com/eapdob/phpmvc/issues",
-                "source": "https://github.com/eapdob/phpmvc/tree/v1.0.3"
+                "source": "https://github.com/eapdob/phpmvc/tree/v1.0.4"
             },
-            "time": "2022-06-26T18:50:40+00:00"
+            "time": "2022-06-26T19:34:57+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -85,6 +85,10 @@
                 "Result-Type",
                 "result"
             ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.4"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -152,6 +156,10 @@
                 "php",
                 "type"
             ],
+            "support": {
+                "issues": "https://github.com/schmittjoh/php-option/issues",
+                "source": "https://github.com/schmittjoh/php-option/tree/1.8.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -227,6 +235,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.26.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -307,6 +318,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.26.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -387,6 +401,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.26.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -467,6 +484,10 @@
                 "env",
                 "environment"
             ],
+            "support": {
+                "issues": "https://github.com/vlucas/phpdotenv/issues",
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
