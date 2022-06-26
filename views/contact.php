@@ -1,10 +1,10 @@
 <?php
 
-/* @var $this \app\core\View */
-/* @var $model \app\models\ContactForm */
+/* @var $this eapdob\phpmvc\View */
+/* @var $model app\models\ContactForm */
 
-use \app\core\form\Form;
-use \app\core\form\TextareaField;
+use eapdob\phpmvc\form\Form;
+use eapdob\phpmvc\form\TextareaField;
 
 $this->title = 'Contact';
 
@@ -17,4 +17,4 @@ $this->title = 'Contact';
 <?php echo $form->field($model, 'email'); ?>
 <?php echo new TextareaField($model, 'body'); ?>
 <button type="submit" class="btn btn-primary">Submit</button>
-<?php echo \app\core\form\Form::end(); ?>
+<?php echo \eapdob\phpmvc\form\Form::end(); ?>

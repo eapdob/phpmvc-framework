@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\Model;
+use eapdob\phpmvc\Model;
 
 /**
  * Class ContactForm

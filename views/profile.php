@@ -1,6 +1,6 @@
 <?php
 
-/* @var $this \app\core\View */
+/* @var $this eapdob\phpmvc\View */
 
 $this->title = 'Profile';
 

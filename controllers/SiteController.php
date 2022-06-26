@@ -2,11 +2,11 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
-use app\core\Request;
-use app\core\Response;
 use app\models\ContactForm;
+use eapdob\phpmvc\Application;
+use eapdob\phpmvc\Controller;
+use eapdob\phpmvc\Request;
+use eapdob\phpmvc\Response;
 
 /**
  * Class SiteController

@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use eapdob\phpmvc\Application;
+use eapdob\phpmvc\Model;
 
 /**
  * Class LoginForm
