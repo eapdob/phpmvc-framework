@@ -2,6 +2,8 @@
 
 namespace app\core;
 
+use app\core\db\Database;
+
 /**
  * Class Application
  * @author Evgenii Poperezhai eapdob@gmail.com
@@ -18,9 +20,10 @@ class Application
     public Request $request;
     public Response $response;
     public ?Controller $controller = null;
+    public View $view;
     public Session $session;
     public Database $db;
-    public ?DbModel $user;
+    public ?UserModel $user;
 
     public function __construct($rootPath, array $config)
     {
@@ -30,6 +33,7 @@ class Application
         $this->response = new Response();
         $this->session = new Session();
         $this->router = new Router($this->request, $this->response);
+        $this->view = new View();
         $this->db = new Database($config['db']);
 
         $this->userClass = $config['userClass'];
@@ -53,13 +57,13 @@ class Application
             echo $this->router->resolve();
         } catch (\Exception $e) {
             $this->response->setStatusCode($e->getCode());
-            echo $this->router->renderView('_error', [
+            echo $this->view->renderView('_error', [
                 'exception' => $e
             ]);
         }
     }
 
-    public function login(DbModel $user)
+    public function login(UserModel $user)
     {
         $this->user = $user;
         $primaryKey = $user->primaryKey();

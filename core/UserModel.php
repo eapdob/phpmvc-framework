@@ -2,6 +2,8 @@
 
 namespace app\core;
 
+use app\core\db\DbModel;
+
 /**
  * Class UserModel
  * @author Evgenii Poperezhai eapdob@gmail.com
