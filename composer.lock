@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5520439036489b0063a96dc419c6bf42",
+    "content-hash": "c4451d2fbabdf65511a54a0c8f9a6cfe",
     "packages": [
+        {
+            "name": "eapdob/phpmvc",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eapdob/phpmvc.git",
+                "reference": "33e607a2b9b121d379a60059813851b3c2a16b41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eapdob/phpmvc/zipball/33e607a2b9b121d379a60059813851b3c2a16b41",
+                "reference": "33e607a2b9b121d379a60059813851b3c2a16b41",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eapdob\\phpmvc\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "eapdob",
+                    "email": "eapdob@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/eapdob/phpmvc/issues",
+                "source": "https://github.com/eapdob/phpmvc/tree/v1.0.3"
+            },
+            "time": "2022-06-26T18:50:40+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.0.4",
@@ -455,5 +488,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }
