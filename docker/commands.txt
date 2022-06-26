@@ -1,0 +1,4 @@
+docker build -t phpmvc-frame ./docker
+docker run -d --rm -p 8080:80 --name phpmvc-frame -v "$PWD":/var/www phpmvc-frame
+docker exec -it phpmvc-frame /bin/bash
+docker exec phpmvc-frame composer install
